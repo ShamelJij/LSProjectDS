@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en,de">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -9,14 +9,28 @@
 </head>
 <body>
 <h1>Inventar</h1>
+<div id="inventar">
 	<label for="status">Status</label>
-		<select name="status" id="status">
-			<option value="Aktiv">Aktiv</option>
-			<option value="Abgebucht">Abgebucht</option>
-		</select>
-	<label for="Abschaffungsdatum">Abschaffungsdatum</label>
-		<input type="text">
-
+	<select name="status" id="status">
+		<option value="Aktiv">Aktiv</option>
+		<option value="Abgebucht">Abgebucht</option>
+	</select>
+	<label for="abschaffungsdatum">Abschaffungsdatum</label>
+	<input type="text" id="Abschaffungsdatum">
+	<label for="bezeichnung">BeZeichnung</label>
+	<input type="text" id="bezeichnung">
+	<label for="serialNummer">Serial Nummer</label>
+	<input type="number" id="serialNummer">
+	<label for="Preis">Preis (netto)</label>
+	<input type="number" id="Preis">
+	<label for="abschreiungszeitraum">Abschreibungszeitraum</label>
+	<div id="abschreiungszeitraum">
+		<label for="abschreiungszeitraumVon">von</label>
+		<input type="date" id="abschreiungszeitraumVon">
+		<label for="abschreiungszeitraumBis">bis</label>
+		<input type="date" id="abschreiungszeitraumBis">
+	</div>
+</div>
 </body>
 </html>
 
