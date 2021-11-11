@@ -29,3 +29,15 @@
 label {
     display: block;
 }
+#grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
+}
+#para {
+    grid-area: 1/2/3/4;
+}
+#para2 {
+    grid-area: 4/3/5/5;
+}
