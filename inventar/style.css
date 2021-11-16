@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .center {
 
     margin-left: auto;
@@ -37,12 +37,19 @@ label {
 
 }
 #para {
-    grid-area: 1/2/3/4;
+    grid-area: 1/2/5/4;
+    background-color: #E6E6FA;
 }
 #para2 {
-    grid-area: 4/3/5/5;
+    padding: 5%;
+    padding: 5%;
+    grid-area: 4/2/6/4;
+    background-color: #a5a5f0;
 }
-=======
+#parag {
+    grid-area: 1/1/6/2;
+    background-color: #60609e;
+}
 .center {
 
     margin-left: auto;
@@ -74,4 +81,3 @@ label {
 label {
     display: block;
 }
->>>>>>> 932e7185e5f8ed4532083ad58612ed02ca4e44ff
