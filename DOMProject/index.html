@@ -16,36 +16,32 @@
   <h1>Inventurverwaltung</h1>
   <div class="container-main">
     <div class="container-inventar">
-<<<<<<< HEAD
-      <h2>Inventar s</h2>
-=======
-      <h2>Inventar change</h2>
->>>>>>> 4bd438d6551538d22053fa7769112388f12612d2
+		 <h2>Inventar change</h2>
       <form action="" class="inventar-form">
-        <label for="status">Status</label>
+        <label for="statusid">Status</label>
         <select name="selectStatus" id="statusid">
           <option value="aktiv">Aktiv</option>
           <option value="abgebucht">Abgebucht</option>
         </select>
         <div class="anschaffungsDatumDiv">
-          <h3 for="anschaffungsDatum">Anschaffugs Datum</h3>
-          <label for="anschaffvon">von</label>
+          <h3>Anschaffugs Datum</h3>
+          <label for="anschaffVonid">von</label>
           <input type="date" name="anschaffVon" id="anschaffVonid">
-          <label for="anschaffBis">bis</label>
+          <label for="anschaffBisid">bis</label>
           <input type="date" name="anschaffBis" id="anschaffBisid">
         </div>
-        <label for="inventarBezeichnung">Bezeichnung</label>
+        <label for="inventarBezeichnungid">Bezeichnung</label>
         <input type="text" name="inventarBezeichnung" id="inventarBezeichnungid">
-        <label for="seriennummer">Seriennummer</label>
+        <label for="seriennummerid">Seriennummer</label>
         <input type="number" name="seriennummer" id="seriennummerid">
-        <label for="preisnetto">Preis (netto)</label>
+        <label for="preisnettoid">Preis (netto)</label>
         <input type="number" name="preisnetto" id="preisnettoid">
         <div class="abschreibungZeitraumDiv">
-          <h3 for="abschreibungZeitraum">Abschreibung Zeitraum</h3>
-          <label for="abschreibungZeitraumVon">von</label>
-          <input type="date" name="abschreibungZeitraumVon" id="abschreibungZeitraumVonif">
-          <label for="abschreibungZeitraumBis">bis</label>
+          <h3>Abschreibung Zeitraum</h3>
+          <label for="abschreibungZeitraumVonid">von</label>
           <input type="date" name="abschreibungZeitraumVon" id="abschreibungZeitraumVonid">
+          <label for="abschreibungZeitraumBisid">bis</label>
+          <input type="date" name="abschreibungZeitraumVon" id="abschreibungZeitraumBisid">
         </div>
         <div class="container-main-button">
           <button id="inventar-speicher">Speicher</button>
@@ -55,13 +51,13 @@
     <div class="container-person">
       <h2>Person</h2>
       <form action="" class="person-form">
-        <label for="PName">Name</label>
+        <label for="PNameid">Name</label>
         <input type="text" name="PName" id="PNameid">
-        <label for="PVorname">Vorname</label>
-        <input type="text" name="PVorname" id="Vornameid">
-        <label for="personalnummer">Personalnummer</label>
+        <label for="PVornameid">Vorname</label>
+        <input type="text" name="PVorname" id="PVornameid">
+        <label for="personalnummerid">Personalnummer</label>
         <input type="number" name="personalnummer" id="personalnummerid">
-        <label for="PEmail">E-Mail</label>
+        <label for="PEmailid">E-Mail</label>
         <input type="email" name="PEmail" id="PEmailid">
         <div class="container-main-button">
           <button id="person-speicher">Speicher</button>
@@ -71,23 +67,23 @@
     <div class="container-ort">
       <h2>Ort</h2>
       <form action="" class="ort-form">
-        <label for="ortBezeichnung">Bezeichnung</label>
+        <label for="ortBezeichnungid">Bezeichnung</label>
         <input type="text" name="ortBezeichnung" id="ortBezeichnungid">
         <div class="strasseHaus">
-          <label for="strasse">Straße</label>
+          <label for="strasseid">Straße</label>
           <input type="text" name="strasse" id="strasseid">
-          <label for="hausnummer">Hausnummer</label>
+          <label for="hausnummerid">Hausnummer</label>
           <input type="number" name="hausnummer" id="hausnummerid">
         </div>
         <div class="plzOrt">
-          <label for="plz">PLZ</label>
+          <label for="plzid">PLZ</label>
           <input type="number" name="plz" id="plzid">
-          <label for="ort">Ort</label>
+          <label for="ortid">Ort</label>
           <input type="text" name="ort" id="ortid">
-          <label for="stockwerk">Stockwerk</label>
-          <input type="number">
-          <label for="zimmer">Zimmer</label>
-          <input type="text">
+          <label for="stockwerkid">Stockwerk</label>
+          <input type="number" name="stockwerk" id="stockwerkid">
+          <label for="zimmerid">Zimmer</label>
+          <input type="text" name="zimmer" id="zimmerid">
           <div class="container-main-button">
             <button class="container-main-button" id="ort-speicher">Speicher</button>
           </div>
