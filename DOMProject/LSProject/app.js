@@ -13,9 +13,10 @@ function save(){
 
     var new_data = document.getElementById('input').value;
     if(localStorage.getItem('data') == null){
-        localStorage.getItem('data','[]');;
+        localStorage.getItem('data','[]');
 
     }
+    //test
 
 }
 function view(){
