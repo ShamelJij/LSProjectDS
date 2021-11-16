@@ -10,11 +10,12 @@ console.log(localStorage);
 let myObj_deserialized = localStorage.getItem("myObj");
 console.log(myObj_deserialized);
 function save(){
-    if(localStorage)
+    if(localStorage.getItem('data') == null){
+        localStorage.getItem('data','[]');
+    }
 
 }
 function view(){
-
 }
 
 
