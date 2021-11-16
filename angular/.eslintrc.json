@@ -1,0 +1,96 @@
+{
+	"root": true,
+	"ignorePatterns": [
+		"projects/**/*"
+	],
+	"overrides": [
+		{
+			"files": [
+				"*.ts"
+			],
+			"parserOptions": {
+				"project": [
+					"tsconfig.json"
+				],
+				"createDefaultProgram": true
+			},
+			"extends": [
+				"plugin:@angular-eslint/recommended",
+				"plugin:@angular-eslint/template/process-inline-templates"
+			],
+			"rules": {
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"type": "attribute",
+						"prefix": "app",
+						"style": "camelCase"
+					}
+				],
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"type": "element",
+						"prefix": "app",
+						"style": "kebab-case"
+					}
+				],
+				"indent": [
+					"error",
+					"tab"
+				],
+				"no-tabs": [
+					"error",
+					{
+						"allowIndentationTabs": true
+					}
+				],
+				"max-len": [
+					"error",
+					{
+						"code": 120,
+						"tabWidth": 2,
+						"ignoreComments": true,
+						"ignoreTrailingComments": true,
+						"ignoreStrings": true,
+						"ignoreTemplateLiterals": true,
+						"ignoreRegExpLiterals": true
+					}
+				],
+				"object-curly-spacing": [
+					"error",
+					"always"
+				],
+				"require-jsdoc": [
+					"warn",
+					{
+						"require": {
+							"FunctionDeclaration": true,
+							"MethodDefinition": true,
+							"ClassDeclaration": false,
+							"ArrowFunctionExpression": false,
+							"FunctionExpression": false
+						}
+					}
+				],
+				"comma-dangle": [
+					"error",
+					"only-multiline"
+				],
+				"semi": [
+					"error",
+					"always"
+				]
+			}
+		},
+		{
+			"files": [
+				"*.html"
+			],
+			"extends": [
+				"plugin:@angular-eslint/template/recommended"
+			],
+			"rules": {}
+		}
+	]
+}

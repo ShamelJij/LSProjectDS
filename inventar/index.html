@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en,de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+<h1 class="center">Inventar</h1>
+<div id="inventar">
+	<label for="status">Status</label>
+	<select name="status" id="status">
+		<option value="Aktiv">Aktiv</option>
+		<option value="Abgebucht">Abgebucht</option>
+	</select>
+	<label for="abschaffungsdatum">Abschaffungsdatum</label>
+	<input type="text" id="Abschaffungsdatum">
+	<label for="bezeichnung">BeZeichnung</label>
+	<input type="text" id="bezeichnung">
+	<label for="serialNummer">Serial Nummer</label>
+	<input type="number" id="serialNummer">
+	<label for="Preis">Preis (netto)</label>
+	<input type="number" id="Preis">
+	<label for="abschreiungszeitraum">Abschreibungszeitraum</label>
+	<div id="abschreiungszeitraum">
+		<label for="abschreiungszeitraumVon">von</label>
+		<input type="date" id="abschreiungszeitraumVon">
+		<label for="abschreiungszeitraumBis">bis</label>
+		<input type="date" id="abschreiungszeitraumBis">
+	</div>
+</div>
+<div id="grid">
+	<p id="para">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta dolore, eos est et harum impedit ipsa,
+		modi officia perferendis perspiciatis porro <b>para para para</b>reiciendis, repudiandae similique suscipit ullam voluptate! Animi
+		aspernatur consequuntur culpa excepturi facilis fugit hic impedit iste itaque iure laudantium, maxime molestiae
+		porro quisquam sed veritatis voluptate! Culpa error iste laudantium molestiae nam quo recusandae reiciendis
+		reprehenderit veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloremque eos illo molestiae nemo obcaecati odit perspiciatis quidem quos rem.
+
+	</p>
+	<p id="para2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>para2 para2 para2</b>Blanditiis delectus facere illum magnam modi numquam
+		quibusdam quidem quis tempora velit.just and experment with text just exprementing with text just expermenting
+		with text
+	</p>
+	<p id="parag"></p>
+	<p id="output"></p>
+</div>
+
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
+
